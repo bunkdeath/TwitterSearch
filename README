@@ -1,0 +1,5 @@
+This is sample python script that helps in finding the public tweets that has some text.
+Searching of tweets containing given text/string will be displayed along with the created date, geo location if available and in reply to id
+
+This script is for understanding purpose so everything is manual. There is no fancy text input so that we can dynamically supply text.
+Modify according to need.
