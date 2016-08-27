@@ -17,13 +17,13 @@ def parse_argparse():
     return args.keyword, args.limit
 
 
-def main(keyword):
+def main(keyword, limit):
     twitter_search = TwitterSearch()
-    tweets = twitter_search.search("nadal")
+    tweets = twitter_search.search(keyword, limit)
     print json.dumps(tweets, indent=4)
 
 
 if __name__ == '__main__':
     setup_argparse()
     keyword, limit = parse_argparse()
-    main(keyword)
+    main(keyword, limit)
